@@ -1,0 +1,54 @@
+{
+  "name": "tailwindui-stimulus",
+  "version": "1.0.0",
+  "description": "A collection of Stimulus Controllers to operate TailwindUI components",
+  "source": "src/index.js",
+  "exports": "./dist/tailwindui-stimulus.modern.js",
+  "main": "./dist/tailwindui-stimulus.cjs",
+  "module": "./dist/tailwindui-stimulus.module.js",
+  "unpkg": "./dist/tailwindui-stimulus.umd.js",
+  "repository": {
+    "url": "https://github.com/CircleSD/tailwindui-stimulus",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "microbundle --globals @hotwired/stimulus=Stimulus",
+    "prepublish": "npm run build",
+    "test": "NODE_ENV=test jest"
+  },
+  "jest": {
+    "testRegex": ".*.test.js",
+    "roots": [
+      "tests"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
+  "author": "Chris Branson",
+  "license": "MIT",
+  "private": false,
+  "amdName": "TailwindUIStimulusComponents",
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "controller",
+    "tailwindcss",
+    "tailwindui",
+    "components"
+  ],
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "jest": "^27.3.0",
+    "microbundle": "^0.14.0",
+    "mutationobserver-shim": "^0.3.7",
+    "np": "^7.6.0"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": ">=3.0.1"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": ">=3.0.1"
+  }
+}
