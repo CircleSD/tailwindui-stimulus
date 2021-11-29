@@ -2,7 +2,6 @@
  * A helper class to manage Tailwind CSS transitions.
  *
  * element: the DOM element that is having the transitions applied
- * hidden: should the `element` be hidden (true) or shown (false) after the transition?
  * base: a base set of CSS classes for the transition (e.g. "ease-out duration-300")
  * from: the starting set of CSS classes in the transition (e.g. "opacity-0")
  * to: the ending set of CSS classes in the transition (e.g. "opacity-100")
