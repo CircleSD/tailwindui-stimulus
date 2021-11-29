@@ -46,9 +46,9 @@
     "np": "^7.6.0"
   },
   "dependencies": {
-    "@hotwired/stimulus": ">=3.0.1"
+    "@hotwired/stimulus": "^3.0.0"
   },
   "peerDependencies": {
-    "@hotwired/stimulus": ">=3.0.1"
+    "@hotwired/stimulus": "^3.0.0"
   }
 }
