@@ -34,7 +34,7 @@ describe("ConfirmationController", () => {
       application.stop()
     })
 
-    it("displays an alert", async () => {
+    it("displays a confirmation dialog", async () => {
       const action = document.querySelector("[data-action]")
       action.click()
       expect(window.confirm).toBeCalled()
